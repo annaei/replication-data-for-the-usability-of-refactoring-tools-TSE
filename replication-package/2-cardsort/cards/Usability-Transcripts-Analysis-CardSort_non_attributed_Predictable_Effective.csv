@@ -1,0 +1,255 @@
+"<1,1,1,0,1>",ID2,"It's located in a read only container.
+So at this point when you get an error like that it's like this is useless I don't know what to do with it. Am I actually going to go in there and start figuring out why JUnit-Assert-class is located... what. That's not helpful at all.
+So even if I .. maybe if I just do this. And this is the thing once you try this a few times .. Oh there that's better. Then now it's like .. what am I moving am I moving the entire class? That's not what I want. Extract? Oh that didn't work. Extract .. Method? Well that's not what I want either. 'Cause that implies you just got a small section of code
+At this point I'm like well I've got four more methods why don't I just move them? So what's the point. Unless I've been trained specifically on how to use these things. Let's see if this is actually going to work. This may fail because again it's a different file I'm pulling it from. What that's not what I want this is what I want. Let's see what happens now. Interesting what's happening here. Uuh cannot resolve foo. Now this is challenging. Ok where is foo defined oh here is foo. Who wrote this code seriously. Should not be using foo as a variable name. Now the question is I'll put this a the top here even though it's actually not used by any of the top tests this should actually work. Looks like it work. Run it. Done. Ok so I need isNotEmpty and isNotBlank and isBlank. Blank and isNotBlank. I'm having mouse issues.","Invocation
+Not Predictable
+ (“what am I moving am I moving the entire class?”)
+ Not Satisfaction
+ (“Not what I want”)
+ Not Effective
+ (“that didn't work”)Invocation
+Not Efficient
+ (“I've got four more methods why don't I just move them”)"
+"<1,1,0,1,0>",ID2,"No. I guess it's interesting I don't even go to the refactoring menu. I think it is too complicated for a tool to automate so I don't even try. [1:07:21]
+I: If a tool could automate it
+If I knew about it! It's an education thing these things may sit in my IDE for years and I don't know what half this stuff is. Unless I was trained on it read a blogpost on it. These things doesn't happen enough. This particular example I do remember at least once actually more than that. Maybe every six months I deal with a situation like this. But is it worth learning a refactoring tool that you don't 100% trust when you can just do it manually. [1:07:45]
+I: What do you mean by trust?
+How do I know, like it's going to make the change and I need to go and review the change carefully and convince myself it made the right change.
+I: What could go wrong?
+It could incorrectly change the logic. Well it can't miss something - no it could. It may not remove all cases of forceaccess it may just remove some. It may change the logic incorrectly. Tools aren't perfect and we shouldn't trust that they are. That being said I do trust the IDE to underline things I've put a lot of trust in that. [1:08:35]","Reflection
+Not TrustReflection
+Not Predictable
+ (“I need to go and review the change carefully”)Reflection
+Not Effective(""incorrectly change the logic"")
+Not Trust"
+"<1,1,0,1,0>",ID2,"Not so much no. Partially because I'm not in the habit of using it. I have used extract method. It is very simple it says here are the parameters go. I'm trying to remember when I last used it - it must have been Java code. [1:11:56] I've been doing scala recently but I don't think I've done it there.
+I: What makes you say that it is a simple refactoring?
+It's small. It's like - all I'm doing is moving this chunk down there. What it has to do is, what dependencies does it have on other things in the scope and it makes those things parameters. It is simple because I understand exactly what's going on and I feel confident about it. That's a good point. [1:12:36]
+I feel confident that it is doing the right thing and I can easily look at the final code and validate that it's right.","Reflection
+Predictable
+ (“I understand exactly what’s going on”
+ Trust
+ (“I feel confident about it”)Reflection
+Effective
+ (“it is doing the right thing”)
+ Predictable
+ (“easily look at the final code and validate”)"
+"<1,1,1,0,1>",ID3,"I just did.
+I: Yes manually. Did you consider checking the refactoring menu. [1:49:46] Why did you not consider using it?
+So I would inline this into this.. How would I do this? I have never used this before. Here is the refactoring menu. So it says it has 20 occurrances. What do I even do here? This is like - this is not even the function it is usages of it? Will this change the invocation? This is not what I want. This is already discouraging me from pursuing it forward. Only if I discover that what I want to do is impossible or taking too long then I would research.","Invocation
+Not Predictable
+ (“What do I even do here”)
+ Not Satisfaction 
+ (“already discouraging me from pursuing it forward”)
+ Not Effective 
+ (“This is not what I want. “)
+ Efficient 
+ (“Only if I discover that what I want to do is..taking too long”)"
+"<1,1,0,1,0>",ID4,"I'll be honest I've never used this. I guess I've used something similar in Eclipse. Remember I said I've self-confessed ludite tendencies like because I don't know the tool I might actually just - oh there's a preview. What happens if I just remove this?
+I: You can remove it through the minus sign here.
+So what happens if I remove this? The problem is that it's already defined - ah of course we already have oh by the way I'll admit straight up I'm biased to look at this tool because I'm self-aware of being in a study of refactoring tools.
+I: So you wouldn't normally have looked at it?
+I might have if a co-worker had shown it to me. I think the thing with IDEs the reason I do some of this stuff in Eclipse is because I was shown some of these things when I was an intern. The fact that I've never had anyone sit me down and and say - I guess I've never devoted time at work that I should sit down and learn my IDE. It's mostly just let's get this done. I guess I've just used an approach that works.
+Anyway. I feel like what's going to happen is what I'd do is just delete this method now then I know that some times with certain IDEs I am not sure if I remove a method it might complain somewhere else and it might not let me refactor if there already is compile issues.
+I: So what was you original plan you want to remove..
+What I'll do is I'll just remove this instead of running refactor I'll just remove it and just look myself. I guess I just trust what I can see.","Invocation
+Predictable
+ (“what happens if I remove this? The problem is that it's already defined“)Invocation
+Not Effective 
+ (“it might not let me refactor”)Invocation
+Not Trust"
+"<1,1,1,0,1>",ID4,"parameter forceaccess is used in methodbody. Oh it's saying it's used somewhere - wait - what's that trying to say? Oh it's saying it's used - but that's fine; I'm going to do this and it's going to complain and I'm ok with that. Because I realise that there's no way to do this without something complaining. I feel like it's not going to be able to automatically remove it; besides there are some logic changes too.
+Continue.
+Alright!
+As I mentioned there's some red stuff here. That's fine. If forceaccess set accessible true else continue. It looks like we don't actually need this which means the else is always going to be true. so the question is what does the continue do? The continue will just go back to the beginning of the forloop. I was just looking to see if I actually needed to even have this if-statement up here but it sounds fine. I think that this should be ok because what's happening is if this boolean is false we want to just continue anyway otherwise we want to just return the field. Sure that should work. Ok so now I'm surprised - I'm kinda shocked that there's not more red in here because did I automatically remove it already?
+I: What do you think the tool did?
+Oh it probably already renamed everything that was using this. Ugh.
+I've just realized that I think one of the reasons I'm hesitant to use tools is because I don't know the full impact. If I were to look at a source control diff right now I would assume that we have some usages. There's going to be some very redundant test cases right now because they've probably been automatically renamed to use the default parameter right now. So if I were to look for getField in here ...
+what'll happen is that those test cases are probably going to break.
+If I hadn't used a refactoring tool and I would have just seen the red lines and known that this is exactly what I need to remove. What I'll do now is that I guess there's like a git diff thing I can use in here.","Invocation
+EffectiveInvocation
+Not Predictable 
+ (“surprised” ..”did I automatically remove it already?”)Invocation
+Not SatisfactionInvocation
+Not Predictable
+ (“I don't know the full impact”)Invocation
+Not Efficient
+ (“If I hadn't used a refactoring tool and I would have just seen the red lines and known that this is exactly what I need to remove.”)"
+"<1,1,1,0,1>",ID4,"Of what?
+I: Of this method.
+No if it is as simple as I thought it wouldn't because it'll say return but then it will be the first like of the method. But I guess I don't know what intelliJ ..
+Inline and remove the method inline all and keep the method inline this only and keep the method. So ah to me what happens is I feel like this .. I wonder maybe it's my personal experience but we're not really taught this particular terminology. Either that or I didn't pay attention in class. But to me it's like - for example when I was asked in the questionnaire about more formal refactoring I guess it's like when I was taught design patterns I was like what are these things and it sounded more daunting then I was shown it and I was like ah and now I can use design patterns because I've learned the vocabulary. But it's not something I would have done ahead of time. And I think these refactoring patterns because I'm sure people talk about them but I haven't learned them in a course in university and I'm sure that's probably why. But I'm not sure. When I'm seeing this I'm trying to infer what it means by inline all remove the method inline all keep the method inline this and keep the method. I'm assuming inline all remove the method means find everything that matches this type of inline and remove it inline all and remove the method it's straightforward it's going to remove the method that this is calling so it's going to remove readField and inline this means that I'm going to inline this particular occurrences. I have a feel that it's just going to replace everything and return the end of the same inline field but we'll see.
+[1:36:20] What did I press? I just pressed undo by the way. Yeah inline keep the method there is no preview but.. Uh.. what did it call beforehand? field and target. Oh yeah looks like it worked quite well.
+I: So now you just undid?
+Yeah I just undid because I wanted to see what the difference was. This is literally just me playing around with it trying to see what it's doing.
+I: So you wanted to go back in order to go back in order to compare this with the result of yor refactoring.
+Yeah and obviously I want to see what this method does. yeah so it literally just replaced it. Huh. That is quite useful. That would have saved me a lot of time.
+I: Do you think you would have used that?
+Yes because I feel like inline now that I'm understanding it it looks simple enough that yeah I would have probably done that if I knew that this tool existed then yeah","Invocation
+Predictable (describes what they each do)Invocation
+Effective (“worked quite well”)Reflection
+Efficient (“saved me a lot of time”)Reflection
+Satisfaction"
+"<1,1,0,0,0>",ID5,"Yes, it removed the parameter.
+I: Was that intentional?
+Yes, it is what I expected, that if I remove a parameter it would also be removed from the calls of the methods.","Reflection
+Effective 
+ Predictable"
+"<1,1,0,0,1>",ID7,"The IDE refactoring tools I used a lot in Eclipse were all scoped to the class I was working on. If I created new classes I tended to do it manually.
+I: Why?
+When I started out, I didn't use any ref tools cause I didn't know they existed. For the tools scoped to a single class, like rearranging method signatures, extracting constants, fields, variables, those kinds of operations, I felt like I got an immediate boost in productivity by using them and they were very predictable. It was obvious just from looking at what it said it was going to do, I click on it and it does it, it did what I would have done manually, and it did it faster. For any refactoring that was more complex than those, maybe I did it once or twice, it didn't do what I envisioned that it would do, so I had a miss of expectations there, and it didn't increase my productivity, it got in my way, by doing something I didn't want.","Reflection
+Efficient (“immediate boost in productivity”)
+ Predictable (“they were very predictable”)
+ Effective (“it did what I would have done manually”)"
+"<1,1,0,0,0>",ID7,"Now that I've done this, and I never looking at the tests, I will look at the tests because they're now presumably totally broken.
+I: What are you looking for now?
+These tests used to invoke the methods that I changed. Because I changed their signatures, and they overlap with other signatures there's no actually breakages, but that probably means I have duplicated tests and broken test cases because there were tests that were passing in true, and now everything behaves as if false were being passed in. So if I just scroll down, I can see that I have a bunch of modifications here. So looking at them..
+I: So now you're using the git integration?
+Yes. By invoking the refactoring tool it changed code I wan't looking at. So a good way to see those changes is through the git integration. it this wasn't in a git repository. I'd be more screwed than ... I'd be kind of screwed and this saves my bacon.","Invocation
+Effective 
+ (""I changed their signatures, and they overlap with other signatures there's no actually breakages”)Invocation
+Not Predictable (“changed code I wasn’t looking at”)"
+"<1,1,1,0,0>",ID8,"Just making sure those are specifically the ones I want. I don't need to check for more? et's see if these can be moved in bulk. I don't know if I can highlight more than one. [12:44]
+I: Would you usually go and check that, or is it because of the refactoring study?
+I don't know if I can do multiple at a time, what I might do is move one and then cut and paste the others. Eclipse is pretty good at pulling junk out. Type is not in project make static and move - no, I don't want that. So I guess I can't move. [13:35]
+I: Did you notice that it was called move instance method?
+Hmm
+I: Do you know what this means?
+No. I know what an instance method is but I don't know why it want to make it static. There are no variables. Foo is static. Right. [14:22]","Invocation
+Not Satisfaction (
+ (“no, I don't want that.”)
+ Not Effective 
+ (“I guess I can't move.”)Invocation
+Not Predictable (“I don't know why it want to make it static.”)"
+"<1,1,0,0,0>",ID8,"I: What do you mean?
+With the quick fix I like seeing the error, it is easy to fix it and I know what it's doing.
+If I cut and paste this and I get some errors, I know what quick fix it is applying, I know it is grabbing the import or whatever, I mean, sometimes moving or extracting - you can't always see what happens, it's just here and you can't see what changed. I guess I can use git, but sometimes it is better to just plow through and see that this thing is broken. Sometimes - certainly for us, we have a lot of packages, and we use maven, and if you move something from one package to another you have to go change the pom and change the thing, and now there's the wrong junit there, or whatever, so it will break anyway I guess. [20:41]","Reflection
+Not Predictable 
+ (“sometimes moving or extracting - you can't always see what happens, it's just here and you can't see what changed.”)
+ Not Effective 
+ (“if you move something from one package to another you have to go change the pom and change the thing, and now there's the wrong junit there, or whatever, so it will break anyway”)"
+"<1,1,0,1,1>",ID9,"I: You mentioned trust as an aspect of these tools. What are some example of cases in which you don't trust the tools?
+In my work I typically work in typescript and I know that the find references tool does not find all references so I know that any automated refactoring will miss some call sites. Sometimes it's still worth it to use the refactoring tool and find the remaining call sites myself but I know that I need to do my own search after to either verify or complete the remained of the transformation.
+It is really a tool specific thing that if you know the tool well enough you recognize the bugs and you know you will hit them again. And maybe you stop using the tool. I don't have any big dogmatic that I don't trust the tool to do X it is just that over the years of using refactoring tools I've known there to be buggy tools I've seen them.
+I: And you kept using them?
+I kept using them. Because they are much faster than doing it by hand.
+I: Which refactorings do you usually use them for?
+The most common one is adjust method signature. Like reordering method parameters. Like that is trivial. I trust the tool to do it and it is a lot of work to do by hand. Or introduce a new parameter. If I can introduce a default parameter to all callsites. Maybe I have to go through and see what the real value is at each call site but the tool has identified the callsites for me and has injected a marker for you need to do some work here.","Reflection
+Predictable (“if you know the tool well enough you recognize the bugs and you know you will hit them again”)Reflection
+EfficientReflection
+Trust 
+ Effective 
+ Efficient"
+"<1,1,0,0,0>",ID10,"I: Yes sure, you are not in any way bound to the plan you made.
+No. Silly.
+Uhm, I don't really want to make this static. But this also gives me nothing. Ah, ok sad.
+I'll make a new Java class I guess then. StringUtils - let's call it empty and blank. Unit tests for methods of StringUtils which been moved to their own test classes. Ok. Cool.
+So then, heck, if what I want to do isn't working well, let's move it. Let me move it correctly here.
+Great. Cool. So that isAnyNotEmpty. Let's go for isAnyEmpty. I don't really know what these comments are going for here. No, that's not really. Maybe you need a testing constructor. No sorry. What I want to do. I should be able to move it.
+I: What did you expect this move refactoring to do here?
+That's a great question. I would expect that move refactoring to be able to move an instance methods between two classes. And when it's talking about like, all candidate variables have types that are not in the project, I don't really know it means by candidate variables.","Invocation
+Not Effective (“I don't really want to make this static. But this also gives me nothing.”)Invocation
+Not Predictable 
+ (“I don't really know it means by candidate variables. “)"
+"<1,1,0,0,0>",ID10,"So that's me using the shift shift to find everything, and I'll see if there is a method for testIsAnyNotEmpty. So I can't just inline and remove because my tests won't compile. I don't want to like change my production code and change my test and then run my tests and see if everything is fine.
+A lot of my work is in ruby, so I can get away with not having things defined when I make statements like that. And then, so I would do that, I would keep this, then I would remove the body and see that the corresponding tests fail, and then I'd feel comfortable removing - like if only the tests for isAnyNotBlank fail - then I am comfortable removing the whole method definition and the tests themselves.
+So Inline Method refactoring is not supported when return statement interrupts the execution flow. So sad. [43:31]
+I mean that makes sense to some degree. I know that this refactoring tool, whether it is java or like rubyminds version, gets sad and confused when there's a few different return statemtemt. This itself refers to isNotBlank, which I think is fine, we're not touching isNotBlank. So, how many usages are there of this -
+I: By the way, how did you expect the inline tool to actually inline this, or did you expect it to fail like it did now?
+[44:30] I hadn't expected it to fail. I had expected it to pop up the dialogue box asking keeping or removing and when it tells me the return statements make the execution flow confusing and I can't do it automatically I go like, yes, that is concern that you have.
+I: Right.
+Let me split these vertically so I can take a look at - this is anyNotBlank - I want to keep isAllBlank. Nope, not there.
+Right. Ok. 'Cause it's going to be tricky to line it potentially, here.
+I: Why is that?
+[45:43] I can understand why the different return statements and having the returns inside the for loop would make it difficult to have a cute little inline here, that's not really awesome. Uhm. I could be really cheeky and just drop visibility for this.","Invocation
+Not Effective (“not supported”)Invocation
+Predictable (“that makes sense to some degree.”)Invocation
+Predictable (“I can understand why..make it difficult “)"
+"<1,1,1,0,0>",ID10,"If I were to - I chose to delegate and I chose to preview here. I could show the conflicts in the view. I know where this is used in the method and I know that is this already defined in the class. If I click continue. What .. I wouldn't have considered clicking continue in that case.
+I: Why?
+It tells me that there are problems, which leads me to believe it is not able to do it.
+So like, here, there is the method, with the signature that needs to be changed. And then there is the, uh, unclassified usage, sure, one usage in one file. But let me try it, let's se what the heck happens. Ok, this is an ambiguous call, of course. Why did it have .. Why does it have a forceAccess.. What.
+I want to undo this and see what's going on here. Oh weird what. Why is it even. Ok.
+So it changed the two methods in a way that I didn't expect, it feels bonkers. Right, cause you have a method that has getField with two parameters and one with three parameters. And when I say, I'm fine with the problems, deal with them for me. I still end up with two methods. But the three version is on top and the two version is on bottom.
+I don't need this at all. This being a getField that takes a forceAccess. I don't need to delegate to getField, that's fine.
+So this is a relatively simple manual cleanup that I could do. I just need to continue here. And there is another manual cleanup where this getField was taking. Oh wait, did I have three getFields? I ended up with three getFields. So the changing the signature ended up making a third method instead of changing my two, but the scroll position didn't change or give met any indication. Ok, that's delightfully bonkers. So now I have a getField-method.","Invocation
+Not Effective (“leads me to believe it is not able to do it. “)Invocation
+Not Predictable (“it changed the two methods in a way that I didn't expect”)Invocation
+Not Effective (""I don't need this at all.”)Invocation
+Not Predictable 
+ Not Satisfaction (“bonkers”)"
+"<1,1,1,0,0>",ID14,"testWriteField, testWriteFieldForceAccess, which I just removed.
+If true and ifField is accessible and .. what is this test doing, it's different from the other ones.
+Oh, I think it inlined it. Which is kind of what I asked for. [1:22:45]
+I: What did you expect it to do here?
+I kind of expected it - which now that I think about it was an incorrect expectation - I expected it to put in a ... method that .. err.
+That was a learning step.
+I was confused, because it's not actually calling writeField. I was looking at the code there and to modifying it a moment ago.
+We don't actually need this entire test because we're getting rid of this functionality. I can just destroy this test. That's kind of what I was thinking when I started this. There is the test for writeField and there is the test for writeFieldForceAccess, and if we get rid of the forceAccess method we can get rid of the test. So it kind of did the wrong thing here, but I'm getting rid of the test here so it doesn't matter. [1:24:11]","Invocation
+Effective (“kind of what I asked for”)
+Invocation
+Predictable
+Invocation
+Not Satisfaction (“kind of did the wrong thing”)
+"
+"<1,1,0,0,0>",ID14,"My goal now would be to repeat on what we just did on the other methods. I usually go top down through the file, since it's easier to make sure I don't miss anything.
+And I'm looking for the forceaccess versions. Oh wait, I was going to do the bottom ones first. forceAccess... [1:25:29]
+Oh yeah.. I feel like this refactoring on the previous method did what I wanted it to do. I'm a bit more confident about it now, and I'm just going to double check the refactored method, if there's anything I need to fix like this. field != null is true, why is it always true, .. because getField guarantees it's not.. How do you know it's always null?","Invocation
+Effective (“did what I wanted it to do”)
+ Predictable (“just going to double check the refactored method”)
+"
+"<1,1,1,0,0>",ID16,"Rename, inline, extract method a lot. Occasionally push up or push down. There's also - like not really refactoring - but code generation, getters and setters, I use those a lot. Also eclipse has templates that you can use to quick insert code. I use them a lot.
+I: For the refactoring tools, do you find that they are overall correct?
+Not always. The biggest limitation are cases that don't work that ought to work. Like, it doesn't let you do that.
+I: What are examples of that? [1:34:48]
+Inline is probably the biggest one, saying that it can't do it when it should be able to. But sometimes there are mistakes too, like you do a refactoring and suddenly there are compilation errors. Occasionally you get just totally garbled code?
+I: Do the tool usually warn you in those cases?
+No, it just do it and then suddenly everything is messed up.","Reflection
+Not Effective(“The biggest limitation are cases that don't work that ought to work”)
+Reflection
+Not Satisfaction (“Occasionally you get just totally garbled code“)
+Reflection
+Not Predictable (""it just do it and then suddenly everything is messed up.“)
+"
+"<1,1,1,0,0>",ID19,"I: Ok. Are you comfortable trying to finish the task? 
+ 
+
+ Yeah. I'll just do the craziness.
+I: So what happened now? [09:16]
+I've no idea what happened now. It didn't do anything. So it seems the first time it just made it accessible as a public, and now it will actually move it. So it's actually a bad workflow that it doesn't go to the next stage.","Invocation
+Not Predictable (“no idea what happened now”) 
+ Not Effective (“It didn't do anything.“) 
+ Not Satisfaction (“it's actually a bad workflow”)"
+"<1,1,1,1,0>",ID19,"Did the tests run before compile? 
+ I: Yes.
+It says the the variable can not be resolved. did I mess something up? 
+ I did - I put the wrong class name which is why doing it manually is bad..
+This is one of the benefits, if you have a refactoring tool you trust, is that it can make sure these are correct. But making sure it exposes the changes it is going to make, and why, is a pretty big deal. That's one thing I always have. 
+ The idea of visibility and knowing that is going on, is very important for me, rather than seeing it after the fact.
+I could always go and use the tool and use git to see what actually changed along the way..
+I: Why don't you like that approach?
+Sometimes inspecting changes after the fact can be hard. There is going to be code that is unrelated to your refactoring, since normally refactoring tasks is done as part of other tasks. When you're looking at it after the fact you may also not be able to undo it if something doesn't look right, so it's better to have the information up-front. [23:46]
+As you see here, because the refactoring tool added static to my method, the first test that I actually moved it won't run.
+Where is that one? 
+ testIsAllBlank
+so, as a part of this, you can see that using the refactoring tool actually does break the code functionally. If it wasn't on a test it could have had a different impact, but because it is a test it is a little different.
+I: It prompted you about making it static though.
+But when I said no, it didn't allow it. When I said no, it stopped the refactoring, so you either have to say yes, or not use it. If you say no it does not allow the refactoring, so therefore we had to go with it. But that's also why I reverted it, because I didn't like what it was doing.
+I: Did you expect it to break the test?
+I would not expect a refactoring to break a test especially for a move. That's bad.","Reflection
+Trust 
+ Predictable (“making sure it exposes the changes it is going to make, and why, is a pretty big deal”)
+Reflection
+Predictable (“When you're looking at it after the fact you may also not be able to undo it if something doesn't look right, so it's better to have the information up-front.“)
+Reflection
+Effective (“ If you say no it does not allow the refactoring, so therefore we had to go with it”)
+ Not Satisfaction (“I didn’t like what it was doing”)
+Reflection
+Not Predictable (""I would not expect a refactoring to break a test especially for a move."")
+ Not Satisfaction(""That's bad."")"
+"<1,1,0,1,0>",ID19,"right of the bat I'd trust the simpler one, like rename - because it is like a find and replace in a way right, just a bit smarter - it's easier to trust those ones, but it's not to say I wouldn't try the other ones and figure out my trust based on their utility. It also depends on how often you do it. If you use something only once or twice it is hard to build an understanding or trust for it, but if it is something you use daily or weekly it's something you can start to get a feeling for and understand your trust level for.
+I: and your point about different cases, something you will have some special cases of where it is good or bad to apply it, do you have any examples of that?
+Even the change method signature I did, it is questionable whether it was a good or bad case to use it. You’re trying to remove a parameter, and now you may have had some impact you didn't know about throughout the system. Whereas adding a parameter is an awesome use case because you're adding the parameter, you can default it to something across the calls and there's normally a reason why you add it, is because there are certain call paths you want to change behavior, so it makes it easy to go and find that. There's a difference between adding and removing as well: it changes your belief in the world. When it's removing you had to come back to fix the logic. Adding doesn't break anything until you start using the parameters, or like, using it in your logic. With the removal you have to go do fixes straight away, which is more complex. The trust is impacted by how much work you must invest after the fact. Going back to your question of trusting something that would do the extraction with the negation and it work every time, then that's great, but you need to build up that confidence. If you need to go and change it all the time you would stop using it.","Reflection
+Not Predictable (“you may have had some impact you didn't know about throughout the system.”) 
+ Trust 
+ Effective"

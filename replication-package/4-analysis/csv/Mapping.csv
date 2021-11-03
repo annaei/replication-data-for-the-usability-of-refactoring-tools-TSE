@@ -1,0 +1,58 @@
+Inline Task ,Inline-Key,Inline-Strategy,Move Task,Move-Key,Move-Strategy,Change Signature Task,CS-Key,CS-Strategy,Task-Why-Key,Task-Why
+"I would: 
+
+ Start by moving the implementation of isAnyNotEmpty into isAllEmpty.
+ Validate this change by running testIsAllEmpty.
+ If the test pass, I will remove testIsAnyNotEmpty and isAnyNotEmpty (e.g. by deleting or commenting out).
+ Finally, I validate the changes by running tests.",Start by moving,Structure,"I would: 
+
+ Start with extracting the code I want and any necessary additional code from one of the files into a new class.
+ Then I would extract the code I want and any necessary additional code from the other file into the new class. 
+ Then I would validate the change.",Start with extracting,Structure,"I would: 
+
+ Start by exploring the code structure and get an overview of callers and parameter references.
+ Change one method and its callers at a time, attempting to resolve any compiler errors that appear, (e.g. by removing tests, or delete the default method or update code that references forceAccess, or consolidate the overloaded methods) before moving to the next method.
+ Repeat for each method until all 8 methods are updated. 
+ Validate the change by running tests.",structure,Structure,This approach lets me keep the tests running so I can validate changes.,running-tests
+"I would: 
+ I would start by introducing a temporary new method that isAnyNotEmpty delegate to.
+ I would validate this change by running tests.
+ Then I would replace the call to isAnyNotEmpty to the temporary method. (e.g. return !isAnyNotEmpty(..) is replaced by return !tempMethod(..))
+ I would validate this change by running tests.
+ If the tests pass, I would remove testIsAnyNotEmpty and isAnyNotEmpty (e.g. by deleting or commenting out)
+ Then I would validate the change by running tests.
+ If the tests pass, I would inline the temporary method into isAllEmpty and remove it.",start by introducing,Execute,"I would: 
+
+ Start with duplicating one of the classes (e.g. by copying and pasting).
+ Then I would validate this change. 
+ Then I would remove the appropriate code from the original and the duplicate, so they each contain only the right code elements.
+ Then I would validate this change. 
+ Once one class is finished, I would duplicate code from the other file into the new class (e.g. by copying and pasting).
+ Then I would validate this change.
+ Finally, I would remove code until all classes contain only the code I want and validate continously.",Start with duplicating,Execute,"
+I would: 
+
+ Start by assigning the default value of false to all forceAccess parameters inside all the special-case methods, so the class only performs the default functionality.
+ Then I would run the tests to locate the ones that break and fix them (e.g. by deleting the ones that are no longer necessary).
+ Once all tests pass, I would remove the forceAccess functionality (that is now unused) from all 8 methods. 
+ Then I validate the change using tests.
+ Finally, I move all implementations into the default methods' bodies.
+ Then I validate the change using tests.",default value,Execute,This approach lets me automate as much as possible.,automate
+"I would: 
+
+ Start by removing isAnyNotEmpty (e.g. by deleting or commenting out) to make compiler errors appear.
+ Use the compiler errors to navigate to the code that is impacted (i.e., testIsAnyNotEmpy and isAllEmpty). 
+ Fix compiler errors (e.g. by removing testIsAnyNotEmpty and implementing isAllEmpty by undoing and moving code).
+ Validate the changes by running tests.",start by removing,Local,"I would: 
+
+ Start with creating a new empty class.
+ Then I would move all the methods into the new class.
+ I would fix any compiler errors (e.g. from any additional code).
+ Then I would validate the change. ",Start with creating a new empty class.,Local,"I would: 
+
+ Go through the file top-down and move the implementation from each forceAccess-method into the default method (i.e. for all 8 methods before addressing compiler errors).
+ Go through the file top-down again, and remove all usages of forceAccess in the method body (e.g. by locating compiler errors)
+ Then I would update all callers and tests (e.g. by relying on compiler errors)
+ Finally, I would validate the change by running the tests.",top-down,Local,This approach lets me make the change stepwise.,stepwise
+,,,,,,,,,This approach lets me rely on the compiler to show me the steps.,compiler 
+,,,,,,,,,None of the above..,other 

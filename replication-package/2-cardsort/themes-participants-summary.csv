@@ -1,0 +1,34 @@
+ID,,ID2,ID3,ID4,ID5,ID6,ID7,ID8,ID9,ID10,ID11,ID12,ID13,ID14,ID15,ID16,ID18,ID19,SUM
+User-Tool Mismatch,Effective,1,1,1,,,1,1,,1,,,,,,1,1,1,9
+Validation ,Effective,1,1,1,,,,1,1,,,,,,,,,1,6
+Disrupted Flow,Effective,,,1,,,,,,,,,,,,,,,1
+Simple Operations,Effective,,,,,,1,,,,,,,,,,,,1
+User-Directed,Effective,,,,,,1,,1,1,,,,,,,,1,4
+Cost of Use,Effective,,,,,,,,,,,,,1,,,,,1
+"User Generalized, Tool Not ",Predictable,1,,,,,,1,,,,,,,,,,,2
+Not enough info in UI,Predictable,1,1,1,,,1,1,,1,,,,,,,,,6
+Incomprehensible error messages,Predictable,1,,,,,1,,,1,,,,1,,,,,4
+preview with implications ,Predictable,1,,1,,,,,,1,,,1,1,,1,1,1,8
+review and convince,Predictable,1,,1,,,1,1,1,1,1,1,,1,,,,1,10
+adjust changes ,Predictable,,,1,,1,1,1,1,,,,,,,,,,5
+No alternatives,Predictable,,,,,,,,,,,,,,,1,,,1
+Tool Affordances,Satisfaction,1,1,,,,,,,1,,,,,1,,1,,5
+Tool Impact,Satisfaction,,,1,,,1,1,1,1,,,,,,1,,1,7
+Tool Flexibility,Satisfaction,,,1,,1,,,1,,,,1,,,1,,1,6
+Validation,Satisfaction,,,1,,,,,1,,1,,,,,,,1,4
+Exposing Information,Satisfaction,1,,,,1,,,1,,,,1,,,,,,4
+Cost-Benfit Analysis,Efficient,1,1,1,1,,1,1,1,,1,1,,1,,1,1,1,13
+Tool Triggers,Efficient,,1,,,,,,1,,,,,,,,,,2
+Lack of Code Understanding,Efficient,,,,,1,,,,,1,,,,,,,,2
+Usage Overhead,Efficient,,,,,,,,1,,,,,1,,,,,2
+Tolerance if Speed,Efficient,,,,,,,,1,,,,,,,,,,1
+Understanding in tool and confidence in results required,Trust,1,,1,,1,1,,1,,,,,,,,1,1,7
+Validation,Trust,,1,1,,1,,,,,,,,,,,,,3
+Visibility,Trust,,,1,,,,,,,,1,1,,,,,1,4
+Simple and straightforward operations,Trust,,,,,,1,,1,,,,,,,,,,2
+Limiting change,Trust,,,,,,,,,,,,,,,,,1,1
+User Cost-Benefit Analysis,,1,1,1,1,,1,1,1,1,1,1,1,1,,1,1,1,15
+User Control of Operations,,1,1,1,,1,1,1,1,1,,,1,,,1,,1,11
+Tool Communicating the Change,,1,1,1,,1,1,1,1,1,1,1,1,1,,1,1,1,15
+Tool communicating its capabilities,,1,1,1,,,1,1,,1,,,,1,1,,1,,9
+related work,,,,1,,,,,,,,,,,,,,,1

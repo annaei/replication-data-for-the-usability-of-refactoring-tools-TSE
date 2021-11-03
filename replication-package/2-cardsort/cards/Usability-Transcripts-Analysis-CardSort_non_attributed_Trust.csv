@@ -1,0 +1,288 @@
+,,,,Understanding in tool and confidence in results required,Validation,Visibility,Simple and straightforward operations,Limiting change,Duplicates,Control Sum,Understanding in tool and confidence in results required,Validation,Visibility,Simple and straightforward operations,Limiting change
+,,,,12,3,5,3,1,0,24,ID2ID4ID6ID7ID9ID18ID19,ID3ID4ID6,ID4ID12ID13ID19,ID7ID9,ID19
+"<1,1,0,1,0>",ID2,"No. I guess it's interesting I don't even go to the refactoring menu. I think it is too complicated for a tool to automate so I don't even try. [1:07:21]
+I: If a tool could automate it
+If I knew about it! It's an education thing these things may sit in my IDE for years and I don't know what half this stuff is. Unless I was trained on it read a blogpost on it. These things doesn't happen enough. This particular example I do remember at least once actually more than that. Maybe every six months I deal with a situation like this. But is it worth learning a refactoring tool that you don't 100% trust when you can just do it manually. [1:07:45]
+I: What do you mean by trust?
+How do I know, like it's going to make the change and I need to go and review the change carefully and convince myself it made the right change.
+I: What could go wrong?
+It could incorrectly change the logic. Well it can't miss something - no it could. It may not remove all cases of forceaccess it may just remove some. It may change the logic incorrectly. Tools aren't perfect and we shouldn't trust that they are. That being said I do trust the IDE to underline things I've put a lot of trust in that. [1:08:35]","Reflection
+Not TrustReflection
+Not Predictable
+ (“I need to go and review the change carefully”)Reflection
+Not Effective(""incorrectly change the logic"")
+Not Trust",1,,,,,0,,ID2,,,,
+"<1,1,0,1,0>",ID2,"Not so much no. Partially because I'm not in the habit of using it. I have used extract method. It is very simple it says here are the parameters go. I'm trying to remember when I last used it - it must have been Java code. [1:11:56] I've been doing scala recently but I don't think I've done it there.
+I: What makes you say that it is a simple refactoring?
+It's small. It's like - all I'm doing is moving this chunk down there. What it has to do is, what dependencies does it have on other things in the scope and it makes those things parameters. It is simple because I understand exactly what's going on and I feel confident about it. That's a good point. [1:12:36]
+I feel confident that it is doing the right thing and I can easily look at the final code and validate that it's right.","Reflection
+Predictable
+ (“I understand exactly what’s going on”
+ Trust
+ (“I feel confident about it”)Reflection
+Effective
+ (“it is doing the right thing”)
+ Predictable
+ (“easily look at the final code and validate”)",1,,,,,0,,ID2,,,,
+"<1,0,0,1,0>",ID2,"Yes I do that all the time. I very frequently do that, it goes through and I can confirm .. I am suspicious but again I depend on the tests. [1:13:39]
+I: Would you trust a tool to reduce logic like you did? During T2 and T3 you were reversing and reducing logical operations.
+I think so. If it was like in my refactor menu and it was like reducing logic or something and i could easily see that it was a contained area. I think in the simple cases it's pretty straightforward to know that you know if it's false do this if it's true continue.. but I think your refactoring tool would have to know a lot of control flow analysis in order to do that and be trustworthy. And I would want to see them side by side this is your current state and this is what you will go to. That would be trustworthy. [1:15:10]","Reflection
+Predictable
+ (“this is your current state and this is what you will go to.”)
+ Trust",1,,,,,0,,ID2,,,,
+"<0,0,0,1,0>",ID3,"If I make a kind of qualitative change like a change in the logic the first one would catch some logic problem that is wrong in principle and then I may make a mistake in the scaling approach. Git is one example - this is what git is for.
+I: Is there any automated tools in the IDE you would use to help you? [1:40:42]
+I haven't personally used IDEs that much but some people do. Some things - basic things like rename method extract method there may be tools in your IDE. For this one I am sure there is a tool that removes a function argument but I'm not sure.. I'd have to test it. Everything I have do so far can be automated easily but I'm not sure if someone would make a tool that works in a general case. [1:41:26]","Reflection
+Not Trust
+ (“I’d have to test it”)",,,,,,0,,,,,,
+"<0,0,1,1,0>",ID3,"then you can change it to be what you want after. You want to see a pass after a failure not always passing. [1:46:56]
+I: If you are using a tool for example a refactoring tool how would you gain the same assurance from it?
+I would do the same thing. The refactoring tool would automate the code I am doing - again this is why it is clunky to run some big thing that changes thousands of lines of code because then it's like what do I test? Maybe I do one manually and then apply automated and then do a couple of spot checks.","Reflection
+Not Satisfaction
+ (“it is clunky”)
+ Not Trust 
+ (“what do I test”)",,1,,,,0,,,ID3,,,
+"<0,0,0,1,0>",ID4,"Yeah it was pratically the same: copy-pasting deleting and flipping the return values.
+I: If you had a tool that could automate that would you trust it?
+I'm a self-admitted ludite someone who fears technology - ok that's a bit of an exhaggeration but for me it's like if I knew this tool existed and I'd used it enough.. I wouldn't trust the tool to work just because I was given a tool I'd have to see it work enough times before I trust it. But I always verify because I know that tools can be faul.","Reflection
+Trust",,1,,,,0,,,ID4,,,
+"<1,1,0,1,0>",ID4,"I'll be honest I've never used this. I guess I've used something similar in Eclipse. Remember I said I've self-confessed ludite tendencies like because I don't know the tool I might actually just - oh there's a preview. What happens if I just remove this?
+I: You can remove it through the minus sign here.
+So what happens if I remove this? The problem is that it's already defined - ah of course we already have oh by the way I'll admit straight up I'm biased to look at this tool because I'm self-aware of being in a study of refactoring tools.
+I: So you wouldn't normally have looked at it?
+I might have if a co-worker had shown it to me. I think the thing with IDEs the reason I do some of this stuff in Eclipse is because I was shown some of these things when I was an intern. The fact that I've never had anyone sit me down and and say - I guess I've never devoted time at work that I should sit down and learn my IDE. It's mostly just let's get this done. I guess I've just used an approach that works.
+Anyway. I feel like what's going to happen is what I'd do is just delete this method now then I know that some times with certain IDEs I am not sure if I remove a method it might complain somewhere else and it might not let me refactor if there already is compile issues.
+I: So what was you original plan you want to remove..
+What I'll do is I'll just remove this instead of running refactor I'll just remove it and just look myself. I guess I just trust what I can see.","Invocation
+Predictable
+ (“what happens if I remove this? The problem is that it's already defined“)Invocation
+Not Effective 
+ (“it might not let me refactor”)Invocation
+Not Trust",,,1,,,0,,,,ID4,,
+"<1,0,1,1,1>",ID4,"Well there was this intelliJ one that sort of did it but then I guess it messed with how I approached the problem so I decided not to use it.
+I: So what happened there? Can you elaborate?
+Yeah what happened is once I changed it I realised I - I guess in tandem with other tools I realised that I didn't actually know what was changed elsewhere like in the tests for instance. I guess it could have shown me that the tests were broken - but for me at this point with this particular task I liked using the compiler to show me where the error were. So what happened was I realized that I didn't - because I also didn't understand the previous test well enough I didn't understand what was actually changed and I had to do an external diff to compare it. To me it was easier instead of doing that to just use the visual diff of the red and do that. And that's because I found it more intuitive or I guess .. more .. less .. less reliant on other tools because I guess the java compiler is such an ubiquitous thing and I am just leveraging that.
+I: It took quite a long time and it seems the tool could have done some of those changes faster?
+It might have that's a thing I'm not .. 'cause I did change it and remove it but I still found I had to do some of those things manually. Based on what I did the first time around I evaluated it and I thought it was not that much faster with that I was doing. And I figured that my familiarity with my current thing would have made me just switch back to it. Is it worth it for me to use this I guess untested tool now and I decided that I'd rather just finish it up faster. I think we can conclude people are set in their ways.
+I guess what happened was I was confronted with something that made me uncomfortable and made not as sure as my current process and so I decided to revert back to it. What happened once I reverted to my process I found it more intuitive and I thought it ended up being faster than the other one. Because with the other one I would have kept checking kept looking over my shoulder the entire time.
+I: You would have kept looking over your shoulder.
+I would have felt more than normal like I might have missed something.
+I: Is that because you don't trust the tool?
+Yeah a little bit. Yeah like when I used the tool I was like wait did change and I ended up having to look.
+I: Did you use the preview window?
+Yeah - what exactly happens - because I thought I used it and I didn't really see much. It kept taking me out of it and I thought - I think having something .. I think having like an active - instead of jumping back into the code I was expecting to see a before and after and I didn't see a diff and maybe there was one but I didn't see it and I was expecting to see a diff.","Reflection
+Not Predictable
+ (“didn't actually know what was changed elsewhere”)
+ Not Efficient
+ (“To me it was easier instead of doing that to just use the visual diff of the red and do that.”)Reflection
+Not Efficient 
+ (“it was not that much faster with that I was doing.”)
+ Not Trust 
+ (“untested tool”)Reflection
+Not Satisfaction
+ (“made me uncomfortable”)
+ Not Efficient
+ (“I reverted to my process … I thought it ended up being faster than the other one”)
+ Not Trust 
+ (“I would have kept checking kept looking over my shoulder the entire time. “)Reflection
+Not Satisfaction 
+ (“was expecting to see a before and after and I didn't see a diff”)",1,,,,,0,,ID4,,,,
+"<1,0,1,1,1>",ID4,"I see. Honestly probably because I didn't really know that one. It looks familiar because I've seen it but I've never used it.
+I: You didn't know what it did?
+...know.. I've seen it but I didn't know what it did. But that sounds way more useful and I probably should have used that because that is actually expanding the call like paste in does. I think it depends for me the more automagical it gets the less I trust it. To me Rename is simple. I like Rename I can quickly Rename I can see what is Renamed et cetera.
+I: What is simple with it?
+It is effectively a very specialized find-and-replace - I guess they all are. To me it just feels like it doesn't do anything - it doesn't feel super fancy. Like compared to this method signature one where it changed a lot of different places - maybe because I'm just more familiar with it but it just seems more - I guess it's because it's more similar to .. I'm not sure.. why do I ..","Reflection
+Trust
+ Efficient (“quickly”)
+ Satisfaction (“like”)
+ Predictable (“see what is Renamed”)Reflection
+Predictable
+ (“it doesn't feel super fancy. Like compared to this method signature one where it changed a lot of different places”)",1,,,,,0,,ID4,,,,
+"<1,0,0,1,0>",ID4,"I might try it like that first since I'm just starting to get comfortable with it.
+I: So you talked about whether you trust the tool or not but what about predictability what does it mean to you that a tool is predictable or that you trust it?
+Trust from me comes from having worked with it and understand it. Predict is more like actually like earlier when the context menu came up with three different options I think that is pretty predictable because I was like I think it's going to do this when I press this. Like rename is really predictable because it's like I'm going to rename this and I think at least in Eclipse it says I'm going to rename it here here here and here. Predictable is nice because it lets you feel in control. When something is unpredictable you don't. What happened with that method signature maybe it was the way I used it but it ended up being unpredictable and I was like I don't know what's going on and that leads to lack of trust. Predictable means that it behaves in a way that I can I guess it doesn't violate any assumptions.","Reflection
+Trust
+ Predictable",1,,,,,0,,ID4,,,,
+"<1,0,0,1,0>",ID6,"Then the other one. [37:13]
+I: Are you expecting this to help you solve the exercise or to help you think?
+To solve the exercise. It is a compiled language so whatever I use to build will show me errors and then I will use these errors as guidelines. I don't know if there is a delete method or something like that. I don't know if there is delete method or something like that. Refactor safe delete .. I don't trust safe delete.
+I: How come?
+I don't know like .. it's probably something I don't use that often but I prefer to see these things happening step by step because I know what's there, I can double-check any of the files that are to be changed and see if there are any other changes that need to be done in them.","Invocation
+Not TrustInvocation
+Not Predictable 
+ (“prefer to see these things happening step by step”)",,1,,,,0,,,ID6,,,
+"<0,0,1,1,0>",ID6,"There may be a bunch of them I'm not sure. Not that I know of.
+I: Would you consider using such a tool another time?
+Perhaps? But again, it has to be very stepwise because I don't want to rely on a tool that will not help me become familiar with the source code. [1:46:37]
+I'm quite certain that if I had to change this file again I would do it much faster because I started to see these dependencies. For example that thing casting a generic object to a field object, and if a tool does not give me that level of detail, when I try to use it to change the code it is not reliable. [1:47:08]","Reflection
+Not Satisfaction (“I don't want to rely on a tool that”)Reflection
+Not Trust (“not reliable”)",1,,,,,0,,ID6,,,,
+"<0,0,0,1,0>",ID7,"I don't find that I very often move methods between classes. I don't find that to be as common an operation unless you're splitting a class into two, or something like this. That happens every so often, but I find that usually when you're doing such an operation; like maybe your task is refactor a class into two separate classes, or maybe you're extracting a superclass and you're going to have two subclasses now instead of one subclass, usually there are other things that needs to change, you're not just doing a move, you usually need to rethink things that are more intricate. So I guess my base assumption is that refactoring tools are not going to do the more intricate things that I'm eventually going to need to deal with, so I guess I just don't bother with them.
+I'm guessing this move method functionality these IDEs have, it probably does something reasonable, but the reasonable thing it does is something I don't do that frequently, so I'm probably never going to learn to use the tool. Whereas I find that extracting a local variable for a literal or a chain of invocations, that's not a challenging thing to do manually, but it's something I do frequently enough that I want it to be as painless as possible.
+I guess it's two ends of the spectrum for someone to want to use a refactoring tool: and the spectrum I fall hardest on is how frequently do I do an operation, and the other end is, how complex is that operation. 'Cause automating complex operations are obviously of great value, or seem to be, but the reliability of automating complex operations are much trickier to get right. I trust the simple things I need to do frequently, and I drive good benefit from making the simple things even simpler.","Reflection
+Trust (“I trust the simple things I need to do frequently”)",,,,1,,0,,,,,ID7,
+"<1,0,0,1,0>",ID7,"I don't find myself working with that kind of fragile code very much. 99% of the time I don't have to worry about these kind of things and I don't have any side effects or that kind of stuff happening, but then for that 1% I can only really rely on tests and code reviews. I don't really expect the tool to warn me about that of thing.
+I: What would you say are dealbreakers for you when using tools?
+The main thing is that I understand what the tool is trying to do. Or the tool behaves in a way that I predict. It's that predictability. I generally don't want a tool to do things that I would never want to do. So like, there are like, repeated patterns that as you work as an SE, you find that you're often doing these operations and they are repetitive, and you'd like them for them to be automated in a nice way. These operations are often simple things, because the simple things are what you do most commonly, and so for the more complex things, you see some complex operation and you think that is automatable. But because it is more complex, there is more variance in what outcomes you actaully want, and so I shy away from those kind of things.
+It's about trust and predictability.
+I: What do you mean by trust?
+That I trust it will be realiable. If something has a lot of variability in what it could do, I can't predict or trust that the outcome will be what I want. Then I have to spend a bunch of time verifying that what it did is what I want, and I'd rather just do what I want instead of ask a computer to do something that I might want and then check to see if it's what I want and then correct it to be what I want, that seems like more effort.","Reflection
+Predictable (“or the tool behaves in a way that I predict”)Reflection
+Trust (“trust it will be reliable”)",1,,,,,0,,ID7,,,,
+"<0,0,0,1,0>",ID8,"No.
+I: When you avoid using refactoring tools, you mentioned you don't use them a lot, why is that? [1:55:59]
+For refactoring, I use rename a lot and move semi-regularly, and move, and those are things I do regularly so I'm comfortable using those. [1:56:13]","Reflection
+Trust",,,,,,0,,,,,,
+"<0,1,0,1,0>",ID9,"I don't think there's anything here that felt weird. I don't think I would usually feel this conscious about the activities I'm doing.
+I: Would you usually try to inline it?
+Yes. I trust that the IDE will do the right thing. [20:36]
+If it had inlined it I wouldn't have inspected the body. It would have been inline it would have been done it would have been fine. But because it didn't automatically inline it I had to stop and think ok what happens when I inline the body of this method.
+I: Would you have inlined this occurrence or all occurrences?
+This occurrence. I haven't .. then I would swap the implementation in the other method and then replace all occurrences of it.
+[21:20] All tests are passing. I trust that I've moved the method correctly. 
+ So now isAnyNotBLank we want to get rid of which is only used in tests, only used in one test. I keep this in my context and I can delete the method because it's only used in one place. If it had been used in application code then inline would have been the appropriate next step.
+
+I: Inline to?
+Inline this. [22:00]
+I would inline this method to migrate all callers to allIsBlank.
+I: So then you would have risk to get a double negation at the call-sites?
+Yes - that's not a bug it is intent preserving. Then I would have wanted to look through the changes do I want to apply a cleanup to any of the inlining. But that is the next step to something I didn't do.","Reflection
+TrustReflection
+Not Effective (“it didn't automatically inline it“)""Reflection
+Effective (“that's not a bug it is intent preserving.”)
+ Not Trust (“Then I would have wanted to look through the changes”)""",1,,,,,0,,ID9,,,,
+"<1,0,0,1,0>",ID9,"Yes.
+I: You mentioned that you trusted the IDE so if it let you do it you wouldn't have checked the body?
+Right. I guess there is classes of things I trust it to do well. This is a simple method. There's no name conflicts, there's no multiple scopes interacting I trust that the IDE can do things like that. At least to the same degree that I trust that I can do things like that.
+I: We just talked about how the change may change the code would that fall under your sense of trust.
+If the IDE moves code and it looks like the code it started from I'm more likely to trust it. Because my mental model of the code hasn't changed it's probably doing the right thing. The more complicated transformations are happening the more manual review is going to need to happen.","Reflection
+TrustReflection
+Trust
+ Predictable",,,,1,,0,,,,,ID9,
+"<0,1,1,1,0>",ID9,"And we throw again..
+So it's just that one of the methods were missing the documentation for that.
+So the refactoring there was magical - I assume it did the right thing but it's a little suspect. [40:50] So in the test
+Some of these tests should be failing because they should be testing behavior that is no longer supported. So I should go through and look at the tests. Maybe I should have done this before deleting the parameter cause now it's going to be hard to look at the tests and know what they were doing before. Oops. [41:35]
+I: Did you expect the refactoring you used to do this?
+Yes. I just didn't think far enough ahead to think if this is what I wanted. Probably the right thing here is to undo. Except I can't. [41:51]","Invocation
+Effective (“the refactoring there was magical”)
+ Trust (“it's a little suspect”)Invocation
+Not Satisfaction (“I just didn't think far enough ahead to think if this is what I wanted”)",,,,,,0,,,,,,
+"<1,1,0,1,1>",ID9,"I: You mentioned trust as an aspect of these tools. What are some example of cases in which you don't trust the tools?
+In my work I typically work in typescript and I know that the find references tool does not find all references so I know that any automated refactoring will miss some call sites. Sometimes it's still worth it to use the refactoring tool and find the remaining call sites myself but I know that I need to do my own search after to either verify or complete the remained of the transformation.
+It is really a tool specific thing that if you know the tool well enough you recognize the bugs and you know you will hit them again. And maybe you stop using the tool. I don't have any big dogmatic that I don't trust the tool to do X it is just that over the years of using refactoring tools I've known there to be buggy tools I've seen them.
+I: And you kept using them?
+I kept using them. Because they are much faster than doing it by hand.
+I: Which refactorings do you usually use them for?
+The most common one is adjust method signature. Like reordering method parameters. Like that is trivial. I trust the tool to do it and it is a lot of work to do by hand. Or introduce a new parameter. If I can introduce a default parameter to all callsites. Maybe I have to go through and see what the real value is at each call site but the tool has identified the callsites for me and has injected a marker for you need to do some work here.","Reflection
+Predictable (“if you know the tool well enough you recognize the bugs and you know you will hit them again”)Reflection
+EfficientReflection
+Trust 
+ Effective 
+ Efficient",,,,1,,0,,,,,ID9,
+"<1,0,0,1,0>",ID10,"keyboard access - delete anyway. Great, that's never used - let's go back to the structure, see what else we have. Reading a declared field, that's before the get, just itself with the false call, perfect, I don't know if in java I can notify my. Yeah, sure. I typed true and I really meant to type false. Sure, rather than needing to visually find it. I already saw that. Delete that anyways. And of course you get weirded out by this. That feels weird, I don't know if I want to do that. I don't think I need to safe delete this, I can just regular delete this.
+I: What would the difference be?
+I don't know. My fear is that safe delete would delete anything that calls it. And the - when it says search in comments and strings - when it says search for usages and delete method readDeclaredField. Like - I think it seems ok. But that one trick whenever I do automated code changes - the option there - like I always like to go to the 'show me what you're going to do before you're going to do it. and the 'ok' - like search for usages and delete method? Is that like - ok, what happens if there are usages, you're going to delete the method, but what's going to happen?","Invocation
+Not Trust (“My fear is that safe delete would delete anything that calls it.”)
+ Not Predictable (“Is that like - ok, what happens if there are usages, you're going to delete the method, but what's going to happen?”)",,,,,,0,,,,,,
+"<0,0,0,1,0>",ID11,"All the places it was used. It gives a good understanding of kind of the footprint of the code, how much code I will be touching. In this case, two files. So i wasn't too worried.
+I: Do you know of any tools that could have automated any of the things you did?
+Nope. I'm sure there are but I have been doing it this way for so long that I probably wouldn't even trust them. [1:15:29]","Reflection
+Trust",,,,,,0,,,,,,
+"<1,0,0,1,1>",ID12,"There was only one usage of the function. There was not many usages or many different kinds of usages. There was just one place in the same file. There was only one usage each. So it seemed like doing it manually and actually knowing what is going on was better than finding some automated way and not knowing what was going on. [40:39]
+I: What do you mean by not knowing what is going on?
+It's not that I don't trust the IDE but those refactoring things that are built in they're a bit magical for moving code around so if you haven't used it a lot you don't know where it will move it. It may move it to the wrong place. Again git is a good tool to show you changes so it should be easy to find where it ended up but if it doesn't do exactly what you want you have to try again and you may end up spending more time than just doing it. [41:24]","Reflection
+Not Trust 
+ Not Predictable (“f you haven't used it a lot you don't know where it will move it.”)
+ Not Efficient (“if it doesn't do exactly what you want you have to try again and you may end up spending more time than just doing it.”)",,,1,,,0,,,,ID12,,
+"<1,0,1,1,0>",ID13,"I think that would have had the same result. I don't .. I think the context switch just throws me off. When I'm moving from here to here, it's like walking into a new room, and you're like, what I'm I doing here. That happens when I open up a new tab. I like to stay as compartmentalized as possible. [1:25:21]
+I: You mentioned that you usually use some refactoring tools, for example rename.
+Sometimes, but not always. I found cases, especially with IntelliJ 2018 and forward, it's too aggressive. It renames too much. Let's say I have a method name, the same as some end point name being stored in a string, which is the same as some documentation stored in a comment. When I click refactor, rename, if I'm not cognisent of the end point it is going to rename that. Unless I have a complete model of the entire program, it is very likely that it will rename such strings. Sometimes it comes up with the view we talked about before, saying this is where it's being used, this is where its being used. I don't like that view. [1:26:36]
+It would be nicer if it almost brought up like a slideshow showing all the places it's being used, and I could click through them and go like, oh, that's an endpoint, I don't want it there. Although, if the project is sufficiently large, that could become really inconvenient, that could be worse. If I could just get a slideshow like, within this package, that would be nice.
+So I do use it, but I wouldn't say I'm 100% confident with it. I don't always trust it. [1:27:12]
+I: Why do you mean by that, not trusting it.
+I'm afraid it's going to do that thing where it's going to rename something in a string and break my program, or rename something in the documentation in some way that I don't want it to. Luckily with version control I can see these things. But sometimes it's easier to look for the references because it's just where it's being called, and I can just .. like, use that global search. Sounds bad when I say it now, but I'll do something like this.. [1:28:10]
+If I do this, I'm more confident because I can see that these are all the method calls, I can go in and just replace one at the time. And this has an equivalent, ctrl shift r. And I can put this in here, and just go through and replace replace replace. [1:28:45]
+I: This is a textual replace, right.
+Yes. This, to me, in many ways feels safer, because I get a preview of what's happening as I'm doing it. While the global rename happens everywhere and I just have to trust that it did the right thing. I guess this is the exact slideshow I am describing. This is how I want things to be replaced when I'm afraid. [1:29:07]","Reflection
+Not Satisfaction (“renames too much”)
+Reflection
+Predictable (“a slideshow showing all the places it's being used, and I could click through them and go like, oh, that's an endpoint, I don't want it there.”)
+Reflection
+Trust
+Reflection
+Predictable (“I'm afraid it's going to do that thing where it's going to rename something in a string and break my program, or rename something in the documentation in some way that I don't want it to.”)
+Reflection
+Trust",,,1,,,0,,,,ID13,,
+"<0,0,0,1,0>",ID16,"Practice I guess. You do it a bunch of times and find out.
+I: When you use such tools, how do you make sure that it doesn't make any changes that you don't want to your code? [1:42:02]
+I have had cases where it did really strange things - like I renamed a method called get and it renamed every method called get. And the only way to really be sure is to check over your code line by line before you commit. But it's pretty rare and proably those are going to be caught by your tests, so I don't worry about it too much.","Reflection
+Trust(""I don't worry about it too much."")",,,,,,0,,,,,,
+"<1,0,0,1,0>",ID18,"I've used rename, extract method and push up members to a superclass, but not too extensively. And I've used - IDK if it is a refactoring tool - but structure view.
+I: How come you have used those?
+They are relatively simple ones. An I know what the code will look like. A really big part of it, is I can pretty much visualize what the code is going to look like after applying those tools. I know the changes are going to be relatively local, whereas for change signature, I have no idea how the code is going to look, and doing this all in an automated way scares me a little. If I do this, am I easily going to go command z if I make a mistake. I guess in these complex cases I put more trust in myself than in the tool. [1:38:38]
+I: Can you summarise what you just said?
+For simple refactorings I know exactly what the changed code is going to look like. For complex refactorings that cut across a lot of files it is difficult to predict what the source code looks like after transformation. And that impacts my trust in the tools. [1:39:02]","Reflection
+Predictable(“An I know what the code will look like.”)
+Not Predictable (“ for change signature, I have no idea how the code is going to look”)
+Not Trust (“in these complex cases I put more trust in myself than in the tool”)Reflection
+Predictable 
+ Trust",1,,,,,0,,ID18,,,,
+"<1,1,1,1,0>",ID19,"Did the tests run before compile? 
+ I: Yes.
+It says the the variable can not be resolved. did I mess something up? 
+ I did - I put the wrong class name which is why doing it manually is bad..
+This is one of the benefits, if you have a refactoring tool you trust, is that it can make sure these are correct. But making sure it exposes the changes it is going to make, and why, is a pretty big deal. That's one thing I always have. 
+ The idea of visibility and knowing that is going on, is very important for me, rather than seeing it after the fact.
+I could always go and use the tool and use git to see what actually changed along the way..
+I: Why don't you like that approach?
+Sometimes inspecting changes after the fact can be hard. There is going to be code that is unrelated to your refactoring, since normally refactoring tasks is done as part of other tasks. When you're looking at it after the fact you may also not be able to undo it if something doesn't look right, so it's better to have the information up-front. [23:46]
+As you see here, because the refactoring tool added static to my method, the first test that I actually moved it won't run.
+Where is that one? 
+ testIsAllBlank
+so, as a part of this, you can see that using the refactoring tool actually does break the code functionally. If it wasn't on a test it could have had a different impact, but because it is a test it is a little different.
+I: It prompted you about making it static though.
+But when I said no, it didn't allow it. When I said no, it stopped the refactoring, so you either have to say yes, or not use it. If you say no it does not allow the refactoring, so therefore we had to go with it. But that's also why I reverted it, because I didn't like what it was doing.
+I: Did you expect it to break the test?
+I would not expect a refactoring to break a test especially for a move. That's bad.","Reflection
+Trust 
+ Predictable (“making sure it exposes the changes it is going to make, and why, is a pretty big deal”)
+Reflection
+Predictable (“When you're looking at it after the fact you may also not be able to undo it if something doesn't look right, so it's better to have the information up-front.“)
+Reflection
+Effective (“ If you say no it does not allow the refactoring, so therefore we had to go with it”)
+ Not Satisfaction (“I didn’t like what it was doing”)
+Reflection
+Not Predictable (""I would not expect a refactoring to break a test especially for a move."")
+ Not Satisfaction(""That's bad."")",,,1,,,0,,,,ID19,,
+"<0,0,0,1,0>",ID19,"No.
+I: Why not?
+Code can become very complex. So if it did a perfect reversal, you might be doing something like returning early, you may be returning early at some point. In some cases, like if you have a loop with continue or break and you negate it, the meaning change.","Reflection
+Not Trust(""No"")",,,,,,0,,,,,,
+"<1,0,0,1,0>",ID19,"Having used it, seeing what happens. The more you use it and seeing success from it, the more you expect that.
+I: what is success in this case.
+When you don't have to go back and doing a whole bunch of fixes on what it did - like removing static in the first case. Those kinds of things are like, if it starts working and your verification steps are all successful for a while, you just start accepting. I'll never really distrust a rename, I just expect it to work and I've used it so many times. When you get into the different refactorings you may learn that there are certain cases it is good for and certain cases it is not, so you learn what your level of trust is based on experience.
+I: Do you have any examples to make that statement more concrete.
+Maybe not for refactoring tools, but, I work with customers all day, and there's the saying you trust it as far as you can throw it. In the start you don't know how much you can trust it. The more you can use something and understand what it's doing, the more you gain trust it. You start small, and as you start to trust it you grow it bigger, and I think that's a common pattern with software. It takes time until you know whether something will work better.
+I: So for refactoring tools you'd trust the 'smaller' one more?
+right of the bat I'd trust the simpler one, like rename - because it is like a find and replace in a way right, just a bit smarter - it's easier to trust those ones, but it's not to say I wouldn't try the other ones and figure out my trust based on their utility. It also depends on how often you do it. If you use something only once or twice it is hard to build an understanding or trust for it, but if it is something you use daily or weekly it's something you can start to get a feeling for and understand your trust level for.","Reflection
+TrustReflection
+Trust 
+ Predictable (“ it is like a find and replace in a way right”)",1,,,,,0,,ID19,,,,
+"<1,1,0,1,0>",ID19,"right of the bat I'd trust the simpler one, like rename - because it is like a find and replace in a way right, just a bit smarter - it's easier to trust those ones, but it's not to say I wouldn't try the other ones and figure out my trust based on their utility. It also depends on how often you do it. If you use something only once or twice it is hard to build an understanding or trust for it, but if it is something you use daily or weekly it's something you can start to get a feeling for and understand your trust level for.
+I: and your point about different cases, something you will have some special cases of where it is good or bad to apply it, do you have any examples of that?
+Even the change method signature I did, it is questionable whether it was a good or bad case to use it. You’re trying to remove a parameter, and now you may have had some impact you didn't know about throughout the system. Whereas adding a parameter is an awesome use case because you're adding the parameter, you can default it to something across the calls and there's normally a reason why you add it, is because there are certain call paths you want to change behavior, so it makes it easy to go and find that. There's a difference between adding and removing as well: it changes your belief in the world. When it's removing you had to come back to fix the logic. Adding doesn't break anything until you start using the parameters, or like, using it in your logic. With the removal you have to go do fixes straight away, which is more complex. The trust is impacted by how much work you must invest after the fact. Going back to your question of trusting something that would do the extraction with the negation and it work every time, then that's great, but you need to build up that confidence. If you need to go and change it all the time you would stop using it.","Reflection
+Not Predictable (“you may have had some impact you didn't know about throughout the system.”) 
+ Trust 
+ Effective",1,,,,,0,,ID19,,,,
+"<1,0,0,1,0>",ID19,"No - and I think that is a hard thing to describe, because that was success for what I was trying to do.
+I: So that did not diminish your trust?
+That did not diminish my trust. That actually increases my trust. It didn't try to modify my logic. The body of your method has the logic that matters to the program that is going to run. It didn't try to do something magic that it wouldn't know how to do depending on what that change meant. Removing forceaccess, it could have also gone to the true one. It didn't know what to do, so it could it is better that it didn't do anything. Something that could have been thought about, in terms of diminishing belief in it, is What it did to the rest of the code, because now you don't know which was true or false.","Reflection
+Trust 
+ Predictable (""It didn't try to do something magic”)
+ Not Predictable (“What it did to the rest of the code, because now you don't know which was true or false. “)",,,,,1,0,,,,,,ID19
+"<1,0,0,1,0>",ID19,"Right. Software is not a simple binary structure. It is a creative piece of work, and creative pieces of work does not have the same definition. So from a language structure, yes, but that doesn't apply a working application.
+I: Do you have any other examples from your previous work of things a refactoring tool did that either diminished your trust, or that were in a sense incorrect, but you were still happy about it.
+A lot of times when you're doing things like extracting superclasses, it gets interesting. What's good is that when you extract someting higher level, if it needs a variable you can pull it along very easily. So having that up-front information builds my trust in it. I'm seeing that impacts, and either cancelling going back and changing what I'm trying to do or deciding to move forward and go with the changes it actually puts in place.","Reflection
+Trust 
+ Predictable (“I'm seeing that impacts,”)",,,1,,,0,,,,ID19,,

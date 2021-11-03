@@ -1,0 +1,10 @@
+Tools,effective,time,satisfying,trust,predictable,Count
+Compiler Output,58.14,39.53,20.93,67.44,46.51,43.00
+Complex Refactoring Tools,70.00,72.50,42.50,50.00,45.00,40.00
+Copy/Cut-Paste,63.64,72.73,22.73,43.18,54.55,44.00
+Debugging,63.64,59.09,54.55,65.91,52.27,44.00
+Simple Refactoring Tools,60.47,81.40,62.79,62.79,53.49,43.00
+Structural Navigation,72.73,79.55,52.27,61.36,63.64,44.00
+TestSuite,62.79,65.12,41.86,65.12,55.81,43.00
+Textual Search,65.12,74.42,20.93,48.84,51.16,43.00
+Version Control Systems,59.09,63.64,45.45,72.73,61.36,44.00

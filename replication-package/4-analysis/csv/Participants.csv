@@ -1,0 +1,48 @@
+Current Title,Age,ResponseId,Label,Years of industry experience,Years of Java or C# Experience,Last ten years of Java or C# Experience,Java Proficiency,C# Proficiency,Max prof,Education,Gender,IDEs used,IntelliJ,Visual Studio,VS Code,Eclipse,Netbeans,Vim,Rider,Other
+Technical Lead / Team Leader,35 - 44,R_3j2wEQERo6rW2Gc,P03,12,5,2,4,1,4,Master's degree,Female,JetBrains IntelliJ,IntelliJ,,,,,,,
+Programmer / Software Developer / Software Engineer,25 - 34,R_3NQhsqqkbgAv7CO,P04,5,5,5,4,4,4,Master's degree,Female,"JetBrains IntelliJ,Visual Studio,VS Code,Other, please specify",IntelliJ,Visual Studio,VS Code,,,,,Other
+Programmer / Software Developer / Software Engineer,25 - 34,R_10TJWah9kB7hmv9,P05,3,3,3,3,2,3,Bachelor's degree,Male,JetBrains IntelliJ,IntelliJ,,,,,,,
+Programmer / Software Developer / Software Engineer,25 - 34,R_1jJRyfOS8buHRxZ,P06,3,3,3,3,1,3,Bachelor's degree,Male,JetBrains IntelliJ,IntelliJ,,,,,,,
+Programmer / Software Developer / Software Engineer,25 - 34,R_3FKJeLmgY8Mbiss,P07,3,4,3,4,2,4,Master's degree,Male,"JetBrains IntelliJ,Eclipse,JetBrains Rider",IntelliJ,,,Eclipse,,,Rider,
+Technical Lead / Team Leader,25 - 34,R_2dz3xnROOlNCuBG,P08,8,5,5,5,3,5,Bachelor's degree,Other,"JetBrains IntelliJ,Visual Studio",IntelliJ,Visual Studio,,,,,,
+Researcher,25 - 34,R_tVDh7yUgUdu0Pux,P09,4,4,4,3,4,4,Master's degree,Male,"JetBrains IntelliJ,Visual Studio",IntelliJ,Visual Studio,,,,,,
+"Other, please specify",45 - 54,R_2qlLyn5YNGeoMUy,P10,22,22,10,3,5,5,Master's degree,Male,"Eclipse,Visual Studio,VS Code",,Visual Studio,VS Code,Eclipse,,,,
+Programmer / Software Developer / Software Engineer,35 - 44,R_Qal96XSg1aTo4E1,P11,14,4,4,3,4,4,Bachelor's degree,Male,"VS Code,Vim,Other, please specify",,,VS Code,,,Vim,,Other
+Programmer / Software Developer / Software Engineer,25 - 34,R_25Yhohf9gwhx1eu,P12,7,7,7,4,1,4,Master's degree,Male,JetBrains IntelliJ,IntelliJ,,,,,,,
+Programmer / Software Developer / Software Engineer,35 - 44,R_3gXi1h0nu8DZ7AS,P13,13,6,3,4,2,4,Master's degree,Male,"JetBrains IntelliJ,Eclipse,Vim",IntelliJ,,,Eclipse,,Vim,,
+Programmer / Software Developer / Software Engineer,25 - 34,R_veQNRcDS1tkrzsl,P14,8,3,3,2,3,3,Master's degree,Male,"JetBrains IntelliJ,Eclipse,Visual Studio,VS Code,JetBrains Rider",IntelliJ,Visual Studio,VS Code,Eclipse,,,Rider,
+Programmer / Software Developer / Software Engineer,25 - 34,R_7VE75wKdt1zio3n,P15,10,7,7,4,2,4,Bachelor's degree,Male,"Eclipse,Netbeans,Visual Studio",,Visual Studio,,Eclipse,Netbeans,,,
+Technical Lead / Team Leader,25 - 34,R_3lyN19nKeR7jm7q,P16,7,5,5,4,4,4,Master's degree,Male,"JetBrains IntelliJ,Visual Studio,VS Code",IntelliJ,Visual Studio,VS Code,,,,,
+Programmer / Software Developer / Software Engineer,18 - 24,R_2ZR0CQ6WvK3ySBf,P17,3,3,3,2,3,3,Bachelor's degree,Female,"Eclipse,Visual Studio,VS Code,Other, please specify",,Visual Studio,VS Code,Eclipse,,,,Other
+Programmer / Software Developer / Software Engineer,25 - 34,R_qJGfZWsSEjtdMDT,P18,6,6,6,4,5,5,Doctoral degree,Male,JetBrains IntelliJ,IntelliJ,,,,,,,
+Programmer / Software Developer / Software Engineer,35 - 44,R_d5zcfTJ6bBAyb3X,P19,20,20,10,5,1,5,Bachelor's degree,Male,"JetBrains IntelliJ,Vim,Other, please specify",IntelliJ,,,,,Vim,,Other
+Technical Lead / Team Leader,45 - 54,R_sp3bl3t3MRPNTBn,P20,23,5,2,4,1,4,Doctoral degree,Male,"JetBrains IntelliJ,Eclipse",IntelliJ,,,Eclipse,,,,
+Programmer / Software Developer / Software Engineer,25 - 34,R_1di6wPCg6YTKuXu,P21,5,5,5,3,4,4,Master's degree,Male,"Visual Studio,VS Code",,Visual Studio,VS Code,,,,,
+Technical Lead / Team Leader,45 - 54,R_1RgncSvW68htUg9,P22,25,18,10,5,3,5,Master's degree,Male,"Eclipse,Visual Studio,VS Code,Other, please specify",,Visual Studio,VS Code,Eclipse,,,,Other
+Programmer / Software Developer / Software Engineer,35 - 44,R_0UHff7WluIiaJ1L,P23,15,13,10,5,,5,Doctoral degree,Male,JetBrains IntelliJ,IntelliJ,,,,,,,
+Programmer / Software Developer / Software Engineer,25 - 34,R_1er6oUqWWyOz8TP,P24,4,4,4,4,1,4,Bachelor's degree,Male,"Eclipse,Netbeans,VS Code",,,VS Code,Eclipse,Netbeans,,,
+Programmer / Software Developer / Software Engineer,45 - 54,R_3z6gNpvryNUKLbr,P25,20,20,10,4,5,5,Doctoral degree,Male,"Visual Studio,VS Code,JetBrains Rider",,Visual Studio,VS Code,,,,Rider,
+Project Manager,45 - 54,R_3hgOIHp2uaIfsM2,P26,28,6,6,1,4,4,High school graduate (high school diploma or equivalent including GED),Male,"Netbeans,Visual Studio",,Visual Studio,,,Netbeans,,,
+Technical Lead / Team Leader,45 - 54,R_2qEh6N2UWSdtoEb,P27,24,24,10,5,1,5,Some college or university but no degree,Male,JetBrains IntelliJ,IntelliJ,,,,,,,
+Technical Lead / Team Leader,25 - 34,R_2X553bIqpHy3h1n,P28,5,5,5,3,5,5,Master's degree,Male,"Visual Studio,VS Code",,Visual Studio,VS Code,,,,,
+System Administrator / Network Engineer,25 - 34,R_2QiEsOiFPV8zlID,P29,5,2,2,4,1,4,Some college or university but no degree,Male,"Vim,EMACS",,,,,,Vim,,
+Programmer / Software Developer / Software Engineer,35 - 44,R_rrlPioZ5L1aESJP,P30,16,16,10,5,2,5,Master's degree,Male,JetBrains IntelliJ,IntelliJ,,,,,,,
+Technical Lead / Team Leader,25 - 34,R_22FUzoxpvlRnAZR,P31,10,10,10,2,5,5,Master's degree,Male,"JetBrains IntelliJ,VS Code,JetBrains Rider",IntelliJ,,VS Code,,,,Rider,
+Programmer / Software Developer / Software Engineer,35 - 44,R_eQY1z0zZNRzsROh,P32,12,12,10,3,4,4,Bachelor's degree,Male,"JetBrains IntelliJ,Visual Studio",IntelliJ,Visual Studio,,,,,,
+Programmer / Software Developer / Software Engineer,25 - 34,R_pAAZkr1IY0OuvUR,P33,,,2,2,4,4,Bachelor's degree,Male,"JetBrains IntelliJ,Netbeans,Visual Studio,VS Code,Vim",IntelliJ,Visual Studio,VS Code,,Netbeans,Vim,,
+Programmer / Software Developer / Software Engineer,35 - 44,R_1QsB6Rz7DlVqkfi,P34,11,7,6,1,5,5,Master's degree,Male,"JetBrains IntelliJ,Visual Studio,VS Code,JetBrains Rider",IntelliJ,Visual Studio,VS Code,,,,Rider,
+Programmer / Software Developer / Software Engineer,25 - 34,R_r0Crov8skpxRX0Z,P35,6,6,6,1,3,3,Bachelor's degree,Prefer not to answer,"Visual Studio,VS Code",,Visual Studio,VS Code,,,,,
+Technical Lead / Team Leader,35 - 44,R_1kUioyAqj82u6jO,P36,20,20,10,4,1,4,Bachelor's degree,Male,"JetBrains IntelliJ,VS Code",IntelliJ,,VS Code,,,,,
+System Administrator / Network Engineer,35 - 44,R_ypR4qhbgU0SUZbP,P37,8,9,2,3,4,4,Some college or university but no degree,Male,"Netbeans,Visual Studio",,Visual Studio,,,Netbeans,,,
+Programmer / Software Developer / Software Engineer,35 - 44,R_rrV2EXnlDOwWtfH,P38,3,3,3,3,2,3,Bachelor's degree,Male,"JetBrains IntelliJ,JetBrains Rider",IntelliJ,,,,,,Rider,
+Programmer / Software Developer / Software Engineer,25 - 34,R_qC9hjVZatKQj2Gl,P39,2,2,2,1,3,3,Master's degree,Male,Visual Studio,,Visual Studio,,,,,,
+Programmer / Software Developer / Software Engineer,25 - 34,R_DAFJcrWr0RiPSxP,P40,3,3,3,2,4,4,Some college or university but no degree,Male,"Visual Studio,VS Code",,Visual Studio,VS Code,,,,,
+Researcher,25 - 34,R_6SeAWzBFKdfGDwl,P41,7,7,7,2,5,5,Doctoral degree,Male,"Visual Studio,VS Code,Other, please specify",,Visual Studio,VS Code,,,,,Other
+Programmer / Software Developer / Software Engineer,25 - 34,R_3lSI2YVTnOgnU7H,P42,9,9,9,2,5,5,Master's degree,Male,"Visual Studio,VS Code",,Visual Studio,VS Code,,,,,
+Programmer / Software Developer / Software Engineer,55 - 64,R_u2PdBGi3I71SAg1,P43,38,35,10,5,3,5,Master's degree,Male,JetBrains IntelliJ,IntelliJ,,,,,,,
+Programmer / Software Developer / Software Engineer,25 - 34,R_31A9pLLDGxehXG8,P44,7,7,7,3,,3,Bachelor's degree,Male,"Netbeans,VS Code",,,VS Code,,Netbeans,,,
+Programmer / Software Developer / Software Engineer,35 - 44,R_1gcMogvXYFoPmhm,P45,12,12,10,5,1,5,Master's degree,Male,"JetBrains IntelliJ,Netbeans",IntelliJ,,,,Netbeans,,,
+Programmer / Software Developer / Software Engineer,45 - 54,R_1pWg6DdJFWbSt4W,P46,34,24,10,5,1,5,Master's degree,Male,"JetBrains IntelliJ,Eclipse,Vim",IntelliJ,,,Eclipse,,Vim,,
+Programmer / Software Developer / Software Engineer,35 - 44,R_2YywV5aIC6PUmOM,P47,15,15,10,2,5,5,Master's degree,Male,"Visual Studio,VS Code",,Visual Studio,VS Code,,,,,
+Researcher,55 - 64,R_1Dp9lTeIAHOHxTa,P48,30,22,4,4,1,4,Master's degree,Male,"Eclipse,Vim",,,,Eclipse,,Vim,,
+,,Sum,,12.11111111,9.622222222,6.043478261,,,3,,41,,26,23,21,11,7,7,6,6
